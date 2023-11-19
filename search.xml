@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>CS61A 学习体会</title>
-    <url>/%E5%AD%A6%E4%B9%A0/80306b89d817/</url>
+    <url>/2022-07-29/80306b89d817/</url>
     <content><![CDATA[<p>大二暑假简单跟着<code>cs61a 20fa</code>课程进行了python学习，当然现在基本很迟了，<code>python</code>学习主要还是跟着官方文档进行知识点学习，主要利用了课程的作业、<code>lab</code>以及<code>project</code>。至于课程讲义和视频，en……目前的英语水平不支持快速浏览，只能选择性观看了。</p>
 <p>本文主要记录一下课程学习过程的一些感受，而非知识点。课程知识点归入本人语雀文档<code>python</code>学习分类。</p>
 <span id="more"></span>
@@ -21,7 +21,7 @@
   </entry>
   <entry>
     <title>博客搭建</title>
-    <url>/%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/d46ddb5b7582/</url>
+    <url>/2023-07-28/d46ddb5b7582/</url>
     <content><![CDATA[<p>配置博客过程中遇到了许多问题，不少知识点，在该文档中进行总结，便于自己日后查看，重新配置。</p>
 <p><strong>暂时搁置搭建，使用语雀进行学习记录</strong></p>
 <h1 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a><code>hexo</code></h1><p><code>npm</code> 命令与 <code>hexo</code>自带命令。</p>
@@ -84,7 +84,7 @@
   </entry>
   <entry>
     <title>语言与编译分类和部分概念</title>
-    <url>/%E6%9D%82%E9%A1%B9/05ae98fa5ce5/</url>
+    <url>/2023-07-28/05ae98fa5ce5/</url>
     <content><![CDATA[<blockquote>
 <p>计算机真是一个颇为复杂的学科，不同概念层出不穷。而且不知道是不是各种速成辅导班带来的墙内特有的混乱，反正各种博客资料是良莠不齐。以笔者水平也没法找到“正统”官方资料，只能博览众多资料，以求最细。当然，很多概念可能就是没有统一说法，只能说了解其本质内容即可，就不要纠结它到底叫什么了……</p>
 <p>最后，笔者水平有限，文章内容可能有误，谨慎参考，欢迎联系指出谬误。</p>
@@ -123,7 +123,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/uncategorized/5d7a6a522531/</url>
+    <url>/2023-07-28/5d7a6a522531/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -141,7 +141,7 @@
   </entry>
   <entry>
     <title>拾遗</title>
-    <url>/%E5%AD%A6%E4%B9%A0/183646acffa2/</url>
+    <url>/2022-09-29/183646acffa2/</url>
     <content><![CDATA[<p>用于记录一些零碎的学习思考。</p>
 <h2 id="链表的插入和删除"><a href="#链表的插入和删除" class="headerlink" title="链表的插入和删除"></a>链表的插入和删除</h2><p>大二高级数据结构跳表展示，在对链表进行升序插入和删除操作时时间差距巨大，具体为数据量越大，删除操作的增量较小，插入增量巨大。到五十万时插入操作到了1秒多，而删除操作不到插入的一半。<br>最初不明白，现在想想应该是因为“惰性删除”，当我们删除数据时，操作系统并不会填充0或者什么来抹除我们的数据，只是回收我们的权限。而插入是实实在在向内存写入数据，因此慢也就正常了。</p>
 <p>这和我们日常使用电脑时的删除应该是一样的，不仅可以提升效率，而且在误删时也可以方便恢复。</p>
@@ -156,7 +156,7 @@
   </entry>
   <entry>
     <title>文档</title>
-    <url>/uncategorized/5e2d3f053d7b/</url>
+    <url>/2023-07-29/5e2d3f053d7b/</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
