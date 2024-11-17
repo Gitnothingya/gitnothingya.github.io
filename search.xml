@@ -70,6 +70,7 @@
 <h1 id="首页置顶"><a href="#首页置顶" class="headerlink" title="首页置顶"></a>首页置顶</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">卸载原有插件安装另一个</span></span><br><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">文章增加top信息</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">添加置顶图标</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打开 /blog/themes/hexo-theme-next/layout/_macro 目录下的 post.swig 文件，在&lt;div class=<span class="string">&quot;post-meta&quot;</span>&gt;标签中插入如下代码：</span></span><br><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">  &lt;i class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/i&gt;</span><br><span class="line">  &lt;font color=7D26CD&gt;置顶&lt;/font&gt;</span><br><span class="line">  &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 
 
+<p>图片展示和下载？<br><img src="/../images/client2.jpg" alt="alt text"></p>
 ]]></content>
       <categories>
         <category>学习</category>
