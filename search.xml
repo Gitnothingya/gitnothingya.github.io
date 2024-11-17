@@ -71,7 +71,9 @@
 
 
 <p>图片展示和下载？<br><img src="/../images/client2.jpg" alt="alt text"></p>
-<p>资源可以直接放吗？<br>C源文件<br><img src="/../images/server.cpp" alt="server.c"><br>zip压缩<br><img src="/../images/server.zip" alt="server.zip"></p>
+<p>资源可以直接放吗？<br>C源文件<br><img src="/../images/server.cpp" alt="server.c"></p>
+
+<p>zip压缩<br><img src="/../images/server.zip" alt="server.zip"></p>
 ]]></content>
       <categories>
         <category>学习</category>
