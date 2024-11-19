@@ -172,3 +172,21 @@ npm install hexo-generator-index-pin-top --save
 ```
 
 
+图片展示和下载？
+![alt text](../images/client2.jpg)
+
+
+资源可以直接放吗？
+C源文件 server.cpp
+{% include_code  lang:cpp server.cpp %}
+
+makefile 
+{% codeblock lang:makefile Makefile %}
+all:
+	g++ client.cpp -o client
+	g++ server.cpp -o server
+# 根据操作系统和编译器版本可能需要添加 -lpthread 参数
+# 本地测试 ubuntu 22.04  g++-11.3.0
+{%  endcodeblock %}
+
+
