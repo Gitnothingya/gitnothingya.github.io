@@ -20,22 +20,25 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/uncategorized/669ef07bac36/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>文档</title>
+    <url>/uncategorized/5e2d3f053d7b/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>拾遗</title>
+    <url>/%E5%AD%A6%E4%B9%A0/183646acffa2/</url>
+    <content><![CDATA[<p>用于记录一些零碎</p>
+<h2 id="夜神-安卓-模拟器和docker冲突"><a href="#夜神-安卓-模拟器和docker冲突" class="headerlink" title="夜神(安卓)模拟器和docker冲突"></a>夜神(安卓)模拟器和docker冲突</h2><p><code>docker</code>依赖的<code>wsl2</code>依赖的<code>hyper-v</code>和安卓模拟器依赖的<code>intel HAMX</code>技术冲突,只能二选一.</p>
+<p>目前貌似没有好的解决方案, <code>AzurLane</code>脚本和夜神相性已经听好了,懒得更换蓝叠的<code>Hyper-V</code>版, 大概率又要折腾一番, 反正目前<code>docker</code>用的少, 到时候自行开关就好了. 主要是开关位置有点问题. </p>
+<p>大部分都是提示在”启用或关闭Windows功能”中关闭(取消勾选)”<code>hyper-v</code>“, 但是是更新了新东西? 反正没用. 在下面你还可以看到一个”虚拟机平台”选项, 取消勾选就可以打开模拟器, 勾上就可以运行”<code>docker</code>“了.</p>
 ]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>零碎</tag>
+        <tag>学习</tag>
+      </tags>
   </entry>
   <entry>
     <title>博客搭建</title>
@@ -182,10 +185,6 @@ tags:
 <span class="token keyword">enum</span> <span class="token class-name">msgtype</span><span class="token punctuation">{</span>CONNECT<span class="token punctuation">,</span> DISCONNECT<span class="token punctuation">,</span> GET_TIME<span class="token punctuation">,</span> GET_NAME<span class="token punctuation">,</span>
              GET_CLIENTS_LIST<span class="token punctuation">,</span> SEND_MSG<span class="token punctuation">,</span> POST_MSG<span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-<span class="token comment">/**
- * @struct msgbuf
- * @brief 自定义消息类型
-*/</span>
 <span class="token keyword">struct</span> <span class="token class-name">Mmsgbuf</span><span class="token punctuation">{</span>
     <span class="token keyword">long</span> mtype<span class="token punctuation">;</span>
     <span class="token keyword">char</span> minfo<span class="token punctuation">[</span>MAX_BUF_SIZE<span class="token punctuation">]</span><span class="token punctuation">;</span>
@@ -209,6 +208,7 @@ mutex mtx<span class="token punctuation">;</span>
 
 map <span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> sockaddr_in<span class="token operator">></span> cliList<span class="token punctuation">;</span>     <span class="token comment">//客户端列表，前一个int表示clientfd.</span>
  vector<span class="token operator">&lt;</span>pthread_t<span class="token operator">></span> clientThreads<span class="token punctuation">;</span>
+
 
 <span class="token keyword">void</span><span class="token operator">*</span> <span class="token function">handle_one_client</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token operator">*</span> arg<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
@@ -379,7 +379,7 @@ map <span class="token operator">&lt;</span><span class="token keyword">int</spa
     cout <span class="token operator">&lt;&lt;</span>YELLOW<span class="token operator">&lt;&lt;</span> <span class="token string">"[Tip] Thread of "</span><span class="token operator">&lt;&lt;</span>cfd<span class="token operator">&lt;&lt;</span><span class="token string">" ended."</span><span class="token operator">&lt;&lt;</span>NORMAL<span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
 
     <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>makefile </p>
 <pre class="line-numbers language-makefile" data-language="makefile"><div class="caption"><span>Makefile</span></div><code class="language-makefile"><span class="token target symbol">all</span><span class="token punctuation">:</span>
@@ -387,6 +387,8 @@ map <span class="token operator">&lt;</span><span class="token keyword">int</spa
 	g++ server.cpp -o server
 <span class="token comment"># 根据操作系统和编译器版本可能需要添加 -lpthread 参数</span>
 <span class="token comment"># 本地测试 ubuntu 22.04  g++-11.3.0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
 ]]></content>
       <categories>
         <category>学习</category>
@@ -398,27 +400,6 @@ map <span class="token operator">&lt;</span><span class="token keyword">int</spa
         <tag>git</tag>
         <tag>node</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>拾遗</title>
-    <url>/%E5%AD%A6%E4%B9%A0/183646acffa2/</url>
-    <content><![CDATA[<p>用于记录一些零碎</p>
-<h2 id="夜神-安卓-模拟器和docker冲突"><a href="#夜神-安卓-模拟器和docker冲突" class="headerlink" title="夜神(安卓)模拟器和docker冲突"></a>夜神(安卓)模拟器和docker冲突</h2><p><code>docker</code>依赖的<code>wsl2</code>依赖的<code>hyper-v</code>和安卓模拟器依赖的<code>intel HAMX</code>技术冲突,只能二选一.</p>
-<p>目前貌似没有好的解决方案, <code>AzurLane</code>脚本和夜神相性已经听好了,懒得更换蓝叠的<code>Hyper-V</code>版, 大概率又要折腾一番, 反正目前<code>docker</code>用的少, 到时候自行开关就好了. 主要是开关位置有点问题. </p>
-<p>大部分都是提示在”启用或关闭Windows功能”中关闭(取消勾选)”<code>hyper-v</code>“, 但是是更新了新东西? 反正没用. 在下面你还可以看到一个”虚拟机平台”选项, 取消勾选就可以打开模拟器, 勾上就可以运行”<code>docker</code>“了.</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>零碎</tag>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文档</title>
-    <url>/uncategorized/5e2d3f053d7b/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>语言与编译分类和部分概念</title>
@@ -458,5 +439,23 @@ map <span class="token operator">&lt;</span><span class="token keyword">int</spa
         <tag>程序语言</tag>
         <tag>编译</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/uncategorized/669ef07bac36/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
 </search>
