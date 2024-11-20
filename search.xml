@@ -175,6 +175,6 @@
     <url>/uncategorized/fa33cf0cbbdd/</url>
     <content><![CDATA[<!-- <div class="pdf-container" data-target="/pdf/802.1AX-2008.pdf" data-height="500px"></div> -->
 
- <embed src="../pdf/802.1AX-2008.pdf" width="100%" height="750" type="application/pdf">]]></content>
+ <embed src="/pdf/802.1AX-2008.pdf" width="100%" height="750" type="application/pdf">]]></content>
   </entry>
 </search>
