@@ -188,15 +188,14 @@
   <entry>
     <title>资源下载</title>
     <url>/uncategorized/65d1c10a7869/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/uncategorized/0a5093b87118/</url>
-    <content><![CDATA[<h3 id="转正申请书"><a href="#转正申请书" class="headerlink" title="转正申请书"></a>转正申请书</h3><p>尊敬的领导：</p>
-<p>​		我于2024年10月14日进入公司，担任嵌入式软件工程师一职。试用期即将结束，特在此提交转正申请，并汇报我的工作情况与成长收获。</p>
-<p>​		作为校招员工，通过学习公司组织的一系列培训课程，我详细了解了公司的发展状况，以及作为公司员工应当遵守的一系列规范。而部门内部的培训让我初步了解了如何进行嵌入式开发以及后续开发的产品——交换机的理论知识与使用方法。最后通过实践开发完成demo protocol 应用以及课题《MPLS流量统计》，我逐步熟悉了公司的FEP平台架构和软件开发方法，并且在完成课题过程中接触了底层硬件的部分知识，掌握了硬件SDK的调试技巧。</p>
-<p>​		自加入公司以来，我逐渐完成了从学生到工程师的过渡，非常感谢导师以及各位同事们的帮助。经过完成课题过程中进行的一系列产品调研，需求分析，设计等流程，我深刻地感受到想要完成一款满足用户需求的优秀产品是一件复杂的事情。而对于一款产品</p>
-<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3>]]></content>
+    <content><![CDATA[<p>资源图片封装和解封装</p>
+
+
+
+<h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><h3 id="terminal"><a href="#terminal" class="headerlink" title="terminal"></a>terminal</h3><p><img src="/../images/terminal_0.jpg" alt="terminal_0"><br><img src="/../images/terminal_1.jpg" alt="terminal_1"><br><img src="/../images/terminal_2.jpg" alt="terminal_2"></p>
+<h3 id="windterm"><a href="#windterm" class="headerlink" title="windterm"></a>windterm</h3><p>2.7.0 预览版本<br><img src="/../images/windterm27_0.jpg" alt="windterm_0"><br><img src="/../images/windterm27_1.jpg" alt="windterm_0"><br><img src="/../images/windterm27_2.jpg" alt="windterm_0"><br><img src="/../images/windterm27_3.jpg" alt="windterm_0"></p>
+<p>2.6.1稳定版本</p>
+<p><img src="/../images/windterm261_0.jpg" alt="windterm_0"><br><img src="/../images/windterm261_1.jpg" alt="windterm_0"><br><img src="/../images/windterm261_2.jpg" alt="windterm_0"></p>
+]]></content>
   </entry>
 </search>
