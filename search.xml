@@ -25,22 +25,20 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/uncategorized/669ef07bac36/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>拾遗</title>
+    <url>/%E5%AD%A6%E4%B9%A0/183646acffa2/</url>
+    <content><![CDATA[<p>用于记录一些零碎</p>
+<h2 id="夜神-安卓-模拟器和docker冲突"><a href="#夜神-安卓-模拟器和docker冲突" class="headerlink" title="夜神(安卓)模拟器和docker冲突"></a>夜神(安卓)模拟器和docker冲突</h2><p><code>docker</code>依赖的<code>wsl2</code>依赖的<code>hyper-v</code>和安卓模拟器依赖的<code>intel HAMX</code>技术冲突,只能二选一.</p>
+<p>目前貌似没有好的解决方案, <code>AzurLane</code>脚本和夜神相性已经听好了,懒得更换蓝叠的<code>Hyper-V</code>版, 大概率又要折腾一番, 反正目前<code>docker</code>用的少, 到时候自行开关就好了. 主要是开关位置有点问题. </p>
+<p>大部分都是提示在”启用或关闭Windows功能”中关闭(取消勾选)”<code>hyper-v</code>“, 但是是更新了新东西? 反正没用. 在下面你还可以看到一个”虚拟机平台”选项, 取消勾选就可以打开模拟器, 勾上就可以运行”<code>docker</code>“了.</p>
 ]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>零碎</tag>
+        <tag>学习</tag>
+      </tags>
   </entry>
   <entry>
     <title>博客搭建</title>
@@ -116,19 +114,9 @@
       </tags>
   </entry>
   <entry>
-    <title>智能插座控制电脑远程开机</title>
-    <url>/uncategorized/439fd1faedc0/</url>
-    <content><![CDATA[<p>公司不让用个人电脑，但是办公电脑限制又多。不可避免要使用自己家中的电脑。无奈电脑功耗有点大了，一直开机却不用，有点心疼电费。于是倒腾一下智能插座。</p>
-<p>使用米家智能插座3，通过米家app控制。</p>
-<p>原理十分简单，为主板设置AC recovery 功能，即电脑断电恢复后是关机，开机还是原状态，设置开机即可。</p>
-<p>然后通过远程控制插座的开关控制电脑断电然后恢复即可实现开机。</p>
-<p>和我一样不太懂的小伙伴可能疑惑了，那怎么关机呢，关机完了不是又开机了？直接断电不是伤电脑吗？</p>
-<p>那其实只需要明白一件事，电脑关机不等于断电，关机状态下主板其实依旧通着电，只有插座断开了源头都没了主板才是真正的断电状态。</p>
-<p>所以关机时依旧正常即可。开机时远程断开插座开关等一段时间主板彻底断电然后打开即可实现开机。</p>
-<blockquote>
-<p>小插曲：为了一起统计显示器的电量，我是把排插插在智能插座上的。结果那个紫米插座断电后是需要再按排查按钮才能打开的，这不就没用了吗！幸好之前搬家买了个公牛排插，没有这个事。</p>
-</blockquote>
-]]></content>
+    <title>杂项</title>
+    <url>/uncategorized/bf99a9b6c667/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#使用http代理 </span><br><span class="line">git config --global http.proxy http://127.0.0.1:58591</span><br><span class="line">git config --global https.proxy https://127.0.0.1:58591</span><br><span class="line">#使用socks5代理</span><br><span class="line">git config --global http.proxy socks5://127.0.0.1:51837</span><br><span class="line">git config --global https.proxy socks5://127.0.0.1:51837</span><br><span class="line"></span><br><span class="line">#仅对github代理</span><br><span class="line">#使用socks5代理（推荐）</span><br><span class="line">git config --global http.https://github.com.proxy socks5://127.0.0.1:51837</span><br><span class="line">#使用http代理（不推荐）</span><br><span class="line">git config --global http.https://github.com.proxy http://127.0.0.1:58591</span><br><span class="line"></span><br><span class="line">git config --global --unset http.proxy git config --global --unset https.proxy</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>语言与编译分类和部分概念</title>
@@ -170,28 +158,13 @@
       </tags>
   </entry>
   <entry>
-    <title>拾遗</title>
-    <url>/%E5%AD%A6%E4%B9%A0/183646acffa2/</url>
-    <content><![CDATA[<p>用于记录一些零碎</p>
-<h2 id="夜神-安卓-模拟器和docker冲突"><a href="#夜神-安卓-模拟器和docker冲突" class="headerlink" title="夜神(安卓)模拟器和docker冲突"></a>夜神(安卓)模拟器和docker冲突</h2><p><code>docker</code>依赖的<code>wsl2</code>依赖的<code>hyper-v</code>和安卓模拟器依赖的<code>intel HAMX</code>技术冲突,只能二选一.</p>
-<p>目前貌似没有好的解决方案, <code>AzurLane</code>脚本和夜神相性已经听好了,懒得更换蓝叠的<code>Hyper-V</code>版, 大概率又要折腾一番, 反正目前<code>docker</code>用的少, 到时候自行开关就好了. 主要是开关位置有点问题. </p>
-<p>大部分都是提示在”启用或关闭Windows功能”中关闭(取消勾选)”<code>hyper-v</code>“, 但是是更新了新东西? 反正没用. 在下面你还可以看到一个”虚拟机平台”选项, 取消勾选就可以打开模拟器, 勾上就可以运行”<code>docker</code>“了.</p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>零碎</tag>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>资源下载</title>
     <url>/uncategorized/65d1c10a7869/</url>
     <content><![CDATA[<p>资源图片封装和解封装的python脚本</p>
 <span id="more"></span>
 
 
+<figure class="highlight python"><figcaption><span>encapsulate</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> struct</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">from</span> pathlib <span class="keyword">import</span> Path</span><br><span class="line"><span class="keyword">import</span> zipfile</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">encapsulate</span>(<span class="params">image_path, zip_path, output_filename</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    将压缩包数据分块封装到图片中</span></span><br><span class="line"><span class="string">    :param image_path: 原始图片路径</span></span><br><span class="line"><span class="string">    :param zip_path: 压缩包路径</span></span><br><span class="line"><span class="string">    :param output_filename: 输出文件名（基础名称）</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 读取图片数据</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(image_path, <span class="string">&#x27;rb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        img_data = f.read()</span><br><span class="line">    img_len = <span class="built_in">len</span>(img_data)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 读取压缩包数据</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(zip_path, <span class="string">&#x27;rb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        zip_data = f.read()</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 分块设置</span></span><br><span class="line">    chunk_size = <span class="number">10</span> * <span class="number">1024</span> * <span class="number">1024</span>  <span class="comment"># 10MB</span></span><br><span class="line">    total_chunks = (<span class="built_in">len</span>(zip_data) + chunk_size - <span class="number">1</span>) // chunk_size</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 处理输出文件名</span></span><br><span class="line">    base, ext = os.path.splitext(output_filename)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(total_chunks):</span><br><span class="line">        start = i * chunk_size</span><br><span class="line">        end = start + chunk_size</span><br><span class="line">        chunk = zip_data[start:end]</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 构建分块文件名</span></span><br><span class="line">        <span class="keyword">if</span> total_chunks &gt; <span class="number">1</span>:</span><br><span class="line">            chunk_filename = <span class="string">f&quot;<span class="subst">&#123;base&#125;</span>_<span class="subst">&#123;i&#125;</span><span class="subst">&#123;ext&#125;</span>&quot;</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            chunk_filename = output_filename</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 构建分块文件内容：图片 + 分块数据 + 4字节图片长度</span></span><br><span class="line">        chunk_file_data = img_data + chunk + struct.pack(<span class="string">&#x27;!I&#x27;</span>, img_len)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 写入文件</span></span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(chunk_filename, <span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.write(chunk_file_data)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">decapsulate</span>(<span class="params">input_filename</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    从封装图片中提取并解压压缩包</span></span><br><span class="line"><span class="string">    :param input_filename: 输入文件名（基础名称或分块文件）</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    input_path = Path(input_filename)</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> input_path.exists():</span><br><span class="line">        <span class="keyword">raise</span> FileNotFoundError(<span class="string">f&quot;文件 <span class="subst">&#123;input_filename&#125;</span> 不存在&quot;</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 准备文件收集参数</span></span><br><span class="line">    dir_path = input_path.parent</span><br><span class="line">    base_stem = input_path.stem</span><br><span class="line">    ext = input_path.suffix</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 匹配分块文件名模式</span></span><br><span class="line">    <span class="keyword">match</span> = re.<span class="keyword">match</span>(<span class="string">r&#x27;^(.*?)_(\d+)$&#x27;</span>, base_stem)</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">match</span>:</span><br><span class="line">        base_name = <span class="keyword">match</span>.group(<span class="number">1</span>)</span><br><span class="line">        pattern = re.<span class="built_in">compile</span>(<span class="string">rf&#x27;^<span class="subst">&#123;re.escape(base_name)&#125;</span>_(\d+)<span class="subst">&#123;re.escape(ext)&#125;</span>$&#x27;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        base_name = base_stem</span><br><span class="line">        pattern = re.<span class="built_in">compile</span>(<span class="string">rf&#x27;^<span class="subst">&#123;re.escape(base_name)&#125;</span>_(\d+)<span class="subst">&#123;re.escape(ext)&#125;</span>$&#x27;</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 收集所有分块文件</span></span><br><span class="line">    chunk_files = []</span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> dir_path.iterdir():</span><br><span class="line">        <span class="keyword">if</span> pattern.<span class="keyword">match</span>(file.name):</span><br><span class="line">            index = <span class="built_in">int</span>(pattern.<span class="keyword">match</span>(file.name).group(<span class="number">1</span>))</span><br><span class="line">            chunk_files.append( (index, file) )</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 如果没有找到分块文件则处理单个文件</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> chunk_files:</span><br><span class="line">        chunk_files.append( (<span class="number">0</span>, input_path) )</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 按索引排序</span></span><br><span class="line">    chunk_files.sort()</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 校验并提取数据</span></span><br><span class="line">    zip_data = <span class="built_in">bytearray</span>()</span><br><span class="line">    img_len = <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> index, chunk_file <span class="keyword">in</span> chunk_files:</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(chunk_file, <span class="string">&#x27;rb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            data = f.read()</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 校验文件有效性</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(data) &lt; <span class="number">4</span>:</span><br><span class="line">            <span class="keyword">raise</span> ValueError(<span class="string">f&quot;文件 <span class="subst">&#123;chunk_file&#125;</span> 损坏&quot;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 提取图片长度信息</span></span><br><span class="line">        current_img_len = struct.unpack(<span class="string">&#x27;!I&#x27;</span>, data[-<span class="number">4</span>:])[<span class="number">0</span>]</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 首次获取图片长度</span></span><br><span class="line">        <span class="keyword">if</span> img_len <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            img_len = current_img_len</span><br><span class="line">        <span class="keyword">elif</span> current_img_len != img_len:</span><br><span class="line">            <span class="keyword">raise</span> ValueError(<span class="string">&quot;分块文件中图片长度不一致&quot;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 校验数据有效性</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(data) &lt; img_len + <span class="number">4</span>:</span><br><span class="line">            <span class="keyword">raise</span> ValueError(<span class="string">f&quot;文件 <span class="subst">&#123;chunk_file&#125;</span> 数据不完整&quot;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 提取压缩数据</span></span><br><span class="line">        zip_data.extend(data[img_len:-<span class="number">4</span>])</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 写入临时压缩包</span></span><br><span class="line">    temp_zip = dir_path / <span class="string">&quot;temp_restored.zip&quot;</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(temp_zip, <span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(zip_data)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 解压文件</span></span><br><span class="line">    <span class="keyword">with</span> zipfile.ZipFile(temp_zip, <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> zf:</span><br><span class="line">        zf.extractall(dir_path)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 清理临时文件</span></span><br><span class="line">    os.remove(temp_zip)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;成功解压到目录：<span class="subst">&#123;dir_path&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    <span class="comment"># 示例用法</span></span><br><span class="line">    <span class="comment"># 封装示例</span></span><br><span class="line">    <span class="comment"># encapsulate(&quot;original.jpg&quot;, &quot;data.zip&quot;, &quot;output.jpg&quot;)</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 解封装示例</span></span><br><span class="line">    <span class="comment"># decapsulate(&quot;output_0.jpg&quot;)</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><h3 id="terminal"><a href="#terminal" class="headerlink" title="terminal"></a>terminal</h3><p><img src="/../images/terminal_0.jpg" alt="terminal_0"><br><img src="/../images/terminal_1.jpg" alt="terminal_1"><br><img src="/../images/terminal_2.jpg" alt="terminal_2"></p>
 <h3 id="windterm"><a href="#windterm" class="headerlink" title="windterm"></a>windterm</h3><p>2.7.0 预览版本<br><img src="/../images/windterm27_0.jpg" alt="windterm_0"><br><img src="/../images/windterm27_1.jpg" alt="windterm_0"><br><img src="/../images/windterm27_2.jpg" alt="windterm_0"><br><img src="/../images/windterm27_3.jpg" alt="windterm_0"></p>
@@ -200,8 +173,36 @@
 ]]></content>
   </entry>
   <entry>
-    <title>杂项</title>
-    <url>/uncategorized/bf99a9b6c667/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#使用http代理 </span><br><span class="line">git config --global http.proxy http://127.0.0.1:58591</span><br><span class="line">git config --global https.proxy https://127.0.0.1:58591</span><br><span class="line">#使用socks5代理</span><br><span class="line">git config --global http.proxy socks5://127.0.0.1:51837</span><br><span class="line">git config --global https.proxy socks5://127.0.0.1:51837</span><br><span class="line"></span><br><span class="line">#仅对github代理</span><br><span class="line">#使用socks5代理（推荐）</span><br><span class="line">git config --global http.https://github.com.proxy socks5://127.0.0.1:51837</span><br><span class="line">#使用http代理（不推荐）</span><br><span class="line">git config --global http.https://github.com.proxy http://127.0.0.1:58591</span><br><span class="line"></span><br><span class="line">git config --global --unset http.proxy git config --global --unset https.proxy</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    <title>Hello World</title>
+    <url>/uncategorized/669ef07bac36/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>智能插座控制电脑远程开机</title>
+    <url>/uncategorized/439fd1faedc0/</url>
+    <content><![CDATA[<p>公司不让用个人电脑，但是办公电脑限制又多。不可避免要使用自己家中的电脑。无奈电脑功耗有点大了，一直开机却不用，有点心疼电费。于是倒腾一下智能插座。</p>
+<p>使用米家智能插座3，通过米家app控制。</p>
+<p>原理十分简单，为主板设置AC recovery 功能，即电脑断电恢复后是关机，开机还是原状态，设置开机即可。</p>
+<p>然后通过远程控制插座的开关控制电脑断电然后恢复即可实现开机。</p>
+<p>和我一样不太懂的小伙伴可能疑惑了，那怎么关机呢，关机完了不是又开机了？直接断电不是伤电脑吗？</p>
+<p>那其实只需要明白一件事，电脑关机不等于断电，关机状态下主板其实依旧通着电，只有插座断开了源头都没了主板才是真正的断电状态。</p>
+<p>所以关机时依旧正常即可。开机时远程断开插座开关等一段时间主板彻底断电然后打开即可实现开机。</p>
+<blockquote>
+<p>小插曲：为了一起统计显示器的电量，我是把排插插在智能插座上的。结果那个紫米插座断电后是需要再按排查按钮才能打开的，这不就没用了吗！幸好之前搬家买了个公牛排插，没有这个事。</p>
+</blockquote>
+]]></content>
   </entry>
 </search>
