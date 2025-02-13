@@ -198,4 +198,9 @@
 <p><img src="/../images/windterm261_0.jpg" alt="windterm_0"><br><img src="/../images/windterm261_1.jpg" alt="windterm_0"><br><img src="/../images/windterm261_2.jpg" alt="windterm_0"></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>杂项</title>
+    <url>/uncategorized/bf99a9b6c667/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#使用http代理 </span><br><span class="line">git config --global http.proxy http://127.0.0.1:58591</span><br><span class="line">git config --global https.proxy https://127.0.0.1:58591</span><br><span class="line">#使用socks5代理</span><br><span class="line">git config --global http.proxy socks5://127.0.0.1:51837</span><br><span class="line">git config --global https.proxy socks5://127.0.0.1:51837</span><br><span class="line"></span><br><span class="line">#仅对github代理</span><br><span class="line">#使用socks5代理（推荐）</span><br><span class="line">git config --global http.https://github.com.proxy socks5://127.0.0.1:51837</span><br><span class="line">#使用http代理（不推荐）</span><br><span class="line">git config --global http.https://github.com.proxy http://127.0.0.1:58591</span><br><span class="line"></span><br><span class="line">git config --global --unset http.proxy git config --global --unset https.proxy</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
 </search>
