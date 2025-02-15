@@ -209,6 +209,8 @@
     <title>dos attack</title>
     <url>/uncategorized/8398235764ba/</url>
     <content><![CDATA[<h3 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h3><p>ip dos prevent type{ land | scan-synfin | xma-scan | null-scan | port-less-1024  | smurf | blat | ping-flood | syn-flood | win-nuke | ping-of-death } </p>
+<!--mpre-->
+
 <h4 id="land-attack"><a href="#land-attack" class="headerlink" title="land attack"></a>land attack</h4><blockquote>
 <p>The attacker sends a specific fake SYN (synchronous) packet to the  destination  host.  Because  both of  the source  IP  address  and  the  destination  IP  address  of  the  SYN  packet  are  set  to  be  the  IP  a ddress  of  the  host,  the host will be trapped in an endless circle of building the initial connection. </p>
 <p>攻击者向目标主机发送特定的假SYN（同步）报文。由于SYN报文的源IP地址和目的IP地址都设置为主机的IP地址，主机将陷入建立初始连接的无休止的循环中。</p>
