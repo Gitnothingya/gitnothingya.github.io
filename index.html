@@ -94,7 +94,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">12</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">9</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">12</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">10</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -159,7 +159,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -190,6 +190,152 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://gitnothingya.github.io/uncategorized/8398235764ba/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/apple-touch-icon-next.png">
+      <meta itemprop="name" content="yanh">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nothing here">
+      <meta itemprop="description" content="如是我闻 姑妄听之">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Nothing here">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/uncategorized/8398235764ba/" class="post-title-link" itemprop="url">dos attack</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-02-15 21:27:18 / 修改时间：23:54:27" itemprop="dateCreated datePublished" datetime="2025-02-15T21:27:18+08:00">2025-02-15</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.6k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>9 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h3><p>ip dos prevent type{ land | scan-synfin | xma-scan | null-scan | port-less-1024  | smurf | blat | ping-flood | syn-flood | win-nuke | ping-of-death } </p>
+<h4 id="land-attack"><a href="#land-attack" class="headerlink" title="land attack"></a>land attack</h4><blockquote>
+<p>The attacker sends a specific fake SYN (synchronous) packet to the  destination  host.  Because  both of  the source  IP  address  and  the  destination  IP  address  of  the  SYN  packet  are  set  to  be  the  IP  a ddress  of  the  host,  the host will be trapped in an endless circle of building the initial connection. </p>
+<p>攻击者向目标主机发送特定的假SYN（同步）报文。由于SYN报文的源IP地址和目的IP地址都设置为主机的IP地址，主机将陷入建立初始连接的无休止的循环中。</p>
+</blockquote>
+<p>LAND攻击利用了TCP连接建立的三次握手过程，通过向一个目标计算机发送一个TCP SYN报文（连接建立请求报文）而完成对目标计算机的攻击。与正常的TCP SYN报文不同的是，LAND攻击报文的源IP地址和目的IP地址是相同的，都是目标计算机的IP地址。这样目标计算机接收到这个SYN报文后，就会向该报文的源地址发送一个ACK报文，并建立一个TCP连接控制结构（TCB），而该报文的源地址就是自己，因此，这个ACK报文就发给了自己。这样如果攻击者发送了足够多的SYN报文，则目标计算机的TCB可能会耗尽，最终不能正常服务。这也是一种DOS攻击。</p>
+<p><strong>防御方式：</strong></p>
+<p>检查TCP报文的源地址和目的地址是否相同，或者TCP报文的源地址是否为环回地址，如果是则丢弃。</p>
+<p>测试：</p>
+<p>发送源地址和目的地址相同的包，或者环回地址，看是否会被丢弃。</p>
+<p>不过好像应该首先了解一下怎么判断包被丢弃了。</p>
+<h4 id="scan-synfin"><a href="#scan-synfin" class="headerlink" title="scan-synfin"></a>scan-synfin</h4><p>攻击者发送SYN字段置1，FIN字段置1的报文。SYN字段用于请求初始连接，FIN字段用于请求断开连接。因此，这种类型的报文是非法的。</p>
+<h4 id="xma-scan-Xmascan"><a href="#xma-scan-Xmascan" class="headerlink" title="xma-scan    Xmascan"></a>xma-scan    Xmascan</h4><blockquote>
+<p>The  attacker  sends  the  illegal  packet  with  its  TCP  index,  FIN, URG and PSH field set to 1</p>
+<p>攻击者发送TCP索引、FIN、URG和PSH字段设置为1的非法报文</p>
+</blockquote>
+<h4 id="null-scan"><a href="#null-scan" class="headerlink" title="null-scan"></a>null-scan</h4><blockquote>
+<p>he  attacker  sends  the illegal  packet with  its  TCP  index  and  all the control fields set to 0.  During the TCP connection and data transmission, the packets with all control fields set to 0 are considered illegal</p>
+<p>攻击者将TCP索引置为0，所有控制字段置为0，发送非法报文。在TCP连接和数据传输过程中，所有控制字段设置为0的报文都被认为是非法的</p>
+</blockquote>
+<h4 id="port-less-1024"><a href="#port-less-1024" class="headerlink" title="port-less-1024"></a>port-less-1024</h4><blockquote>
+<p>The  attacker  sends  the  illegal  packet  with  its  TCP  SYN field set to 1 and source port smaller than 1024</p>
+<p>攻击者发送TCP SYN字段设置为1，源端口小于1024的非法报文</p>
+</blockquote>
+<h4 id="smurf"><a href="#smurf" class="headerlink" title="smurf"></a>smurf</h4><p>特定机器</p>
+<p>Note: Only T1500&amp;T1500G&amp;T1600G series switch supports this feature.</p>
+<blockquote>
+<p>Smurf attack is a distributed denial-of-service attack in which large numbers   of   Internet   Control   Message   Protocol   (ICMP)   packets  with  the intended  victim’s spoofed  source IP  are  broadcast  to  a  computer  network using  an  IP  broadcast  address.   Most  devices  on  a  network  will,  by  default, respond to this by sending a reply to the source IP address.  If the number of machines  on  the  network  that  receive  and  respond  to  these  packets  is  very large, the victim’s computer will be flooded with traffic.</p>
+<p>Smurf攻击是一种分布式拒绝服务攻击，通过IP广播地址向计算机网络发送大量ICMP （Internet Control Message Protocol）报文，欺骗目标的源IP地址。默认情况下，网络上的大多数设备将通过向源IP地址发送应答来响应此请求。如果网络上接收和响应这些数据包的机器数量非常多，受害者的计算机将被流量淹没</p>
+</blockquote>
+<p>Smurf是一种简单但有效的 DDoS 攻击技术，Smurf还是利用ping程序进行源IP假冒的直接广播进行攻击。（被攻击的机器为源IP，往局域网发送ping，大量reply之后瘫痪）在Internet上广播信息可以通过一定的手段（通过广播地址或其他机制）发送到整个网络中的机器。</p>
+<p>防御方式：<br>1.配置路由器禁止IP广播包进网 ；<br>　　2.配置网络上所有计算机的操作系统，禁止对目标地址为广播地址的ICMP包响应。<br>　　3.被攻击目标与ISP协商，有ISP暂时阻止这些流量。<br>　　4.对于从本网络向外部网络发送的数据包，本网络应该将其源地址为其他网络的这部分数据包过滤掉。</p>
+<p>使用限制：<br>由于路由器等三层设备本身就不会转发目的地址是广播地址的报文，因此Smurf攻击在网络上很难形成攻击。在防火墙上体检Smurf攻击必须要求被攻击网络是之间连接到防火墙上。</p>
+<h4 id="blat"><a href="#blat" class="headerlink" title="blat"></a>blat</h4><blockquote>
+<p>The attacker sends the illegal packet with the same source port and destination port on Layer 4 and with its URG field set to 1.  Similar to the Land Attack, the system performance of the attacked host is reduced becausethe Host circularly attempts to build a connection with the attacker</p>
+<p>攻击者发送的非法报文在四层源端口和目的端口相同，且URG字段设置为1。与陆地攻击类似，被攻击主机的系统性能会降低，因为主机会循环尝试与攻击者建立连接</p>
+</blockquote>
+<p>This type of attack will send packets with the TCP&#x2F;UDP source port equal to the destination port of the target device. It may cause the target device to respond to itself.</p>
+<h4 id="ping-flood"><a href="#ping-flood" class="headerlink" title="ping-flood"></a>ping-flood</h4><blockquote>
+<p>The attacker floods the destination system with Ping packets, creating  a  broadcast  storm  that  makes  it  impossible  for  the  system  to respond to legal communication.   </p>
+<p>攻击者向目标系统发送大量Ping包，造成广播风暴，使系统无法响应合法通信。</p>
+</blockquote>
+<h4 id="syn-flood"><a href="#syn-flood" class="headerlink" title="syn-flood"></a>syn-flood</h4><blockquote>
+<p>The  attacker  uses  a  fake  IP  address  to  send  TCP  request packets   to   the   server.    Upon   receiving   the   request   packets,   the   server responds  with  SYN-ACK  packets.   Since  the  IP  address  is  fake,  no  response will  be  returned.   The  server  will  keep  on  sending SYN-ACK  packets.   If  the attacker  sends  overflowing  fake  request  packets,  the  network  resource  will be occupied maliciously and the requests of the legal clients will be denied</p>
+<p>攻击者使用假IP地址向服务器发送TCP请求报文。服务器接收到请求报文后，发送SYN-ACK报文进行响应。由于IP地址是假的，所以不会返回任何响应。服务器将继续发送SYN-ACK报文。如果攻击者发送溢出的虚假请求报文，则会恶意占用网络资源，导致合法客户端的请求被拒绝</p>
+</blockquote>
+<p>SYN Flood 伪造 SYN 报文向服务器发起连接，服务器在收到报文后用 SYN_ACK 应答，此应答发出去后，不会收到 ACK 报文，造成一个半连接。若攻击者发送大量这样的报文，会在被攻击主机上出现大量的半连接，耗尽其资源，使正常的用户无法访问，直到半连接超时。在一些创建连接不受限制的实现里，SYN Flood 具有类似的影响，它会消耗掉系统的内存等资源。</p>
+<p>防御方式：<br>启用 SYN Flood 攻击检测功能时，要求设置一个连接速率阈值和半开连接数量阈值，一旦发现保护主机响应的 TCP 新建连接速率超过连接速度阈值或者半开连接数量超过半开连接数量阈值，防火墙会输出发生 SYN Flood 攻击的告警日志，并且可以根据用户的配置采取以下三种措施：</p>
+<p>增加 SYN 连接，也就是增加半连接队列的容量。<br>减少 SYN + ACK 重试次数，避免大量的超时重发。<br>利用 SYN Cookie 技术，在服务端接收到SYN后不立即分配连接资源，而是根据这个SYN计算出一个Cookie，连同第二次握手回复给客户端，在客户端回复ACK的时候带上这个Cookie值，服务端验证 Cookie 合法之后才分配连接资源。</p>
+<h4 id="win-nuke"><a href="#win-nuke" class="headerlink" title="win-nuke"></a>win-nuke</h4><blockquote>
+<p>Because  the  Operation  System  with  bugs  cannot  correctly process  the URG  (Urgent  Pointer)  of  TCP  packets,  the  attacker  sends  this  631type of packets to the TCP port139 (NetBIOS) of the host with the Operation System bugs, which will cause the host with a blue screen.</p>
+<p>由于有bug的操作系统无法正确处理TCP报文的URG (Urgent Pointer)，攻击者将这种631类型的报文发送到有bug的操作系统主机的TCP port139 (NetBIOS)，造成主机蓝屏。</p>
+</blockquote>
+<p>winnuke是利用NetBIOS协议中一个OOB（Out of Band）的漏洞，也就是所谓的带外数据漏洞而进行的，它的原理是通过TCP&#x2F;IP协议传递一个Urgent紧急数据包到计算机的139端口(139：NetBIOS会话服务的TCP端口)，当win95&#x2F;NT收到这个数据包之后就会瞬间死机或蓝屏，不重新启动计算机就无法继续使用TCP&#x2F;IP协议来访问网络。<br>还有一种是IGMP（Internet Group Management Protocol）分片报文。一般情况下IGMP报文是不会分片的，很多系统对IGMP分片报文的处理也都存在问题。</p>
+<p>带外数据OOB是指TCP连接中发送的一种特殊数据，它的优先级高于一般的数据，带外数据在报头中设置了URG标志，可以不按照通常的次序进入TCP缓冲区，而是进入另外一个缓冲区，立即可以被进程读取或根据进程设置使用SIGURG信号通知进程有带外数据到来。</p>
+<p>后来的Winnuke系列工具已经从最初对单个IP的攻击发展到可以攻击一个IP区间范围的计算机，可以检测和选择端口，并且可以进行连续攻击，还能验证攻击的效果，所以使用它可以造成某个IP地址区间的计算机全部蓝屏死机。</p>
+<p>防御方式：<br>此类攻击是由于利用软件开发过程中对某种特定类型的报文或请求没有处理，导致软件遇到这类型报文时运行出现异常，软件崩溃甚至系统崩溃。防范此类攻击的方法就是升级系统或给系统打补丁，也可以删除NetBIOS协议或关闭137、138、139端口。</p>
+<h4 id="ping-of-death"><a href="#ping-of-death" class="headerlink" title="ping-of-death"></a>ping-of-death</h4><p>Note: Only T1500&amp;T1500G&amp;T1600G series switch supports this feature.</p>
+<blockquote>
+<p>Ping   of   Death   attack   means   that   the   attackersends abnormal ping packets larger than 65535 bytes to cause system crash on the target computer</p>
+<p>Ping of Death攻击是指攻击者向目标计算机发送大于65535字节的异常Ping报文，导致系统崩溃</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1115,13 +1261,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">3k</span>
+    <span title="站点总字数">6k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">13 分钟</span>
+    <span title="站点阅读时长">22 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
